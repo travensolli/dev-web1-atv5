@@ -11,6 +11,7 @@ const config = {
     password: process.env.POSTGRES_PASSWORD,
     database: process.env.POSTGRES_DB,
     port: Number(process.env.POSTGRES_PORT || 5432),
+    ssl: { rejectUnauthorized: false },
 };
 const pool = new Pool(config);
 module.exports = pool;
