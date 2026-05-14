@@ -71,7 +71,7 @@ async function loadConcurso(concurso = "") {
     button.disabled = true;
     setMessage("Buscando concurso...");
 
-    await delay(50);
+    await delay(10);
 
     try {
         const response = await fetch(endpoint);
